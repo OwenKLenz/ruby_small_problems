@@ -1,0 +1,8 @@
+The code will print:
+BOB
+BOB
+
+This is because the name and save_name variables are both referencing the same 
+object, the string 'Bob'. When the destructive method upcase! is called on 
+either of them, it will mutate the string object referenced by both variables so
+printing either variable will display the string BOB.

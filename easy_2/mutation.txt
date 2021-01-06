@@ -1,0 +1,15 @@
+It will print:
+
+Moe 
+Larry 
+CURLY 
+SHEMP 
+Harpo 
+CHICO
+Groucho 
+Zeppo
+
+This is because the after appending all the array values from array1 to array2,
+each index in array2 references the same objects (the strings) referenced by 
+array1. Now, when any values in array one are mutated (as with String#upcase!),
+both arrays are effected.
